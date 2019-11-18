@@ -1,10 +1,14 @@
 **Prerequisites**
+
 Before you begin, make sure your development environment includes Node.js® and an npm package manager.
 
+**Angular CLI**
+
+Angular command line interface
 
 **Node.js**
-Angular requires Node.js version 10.9.0 or later.
 
+Angular requires Node.js version 10.9.0 or later.
 
 To check your version, run node -v in a terminal/console window.
 
