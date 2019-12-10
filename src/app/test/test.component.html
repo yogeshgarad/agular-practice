@@ -1,0 +1,25 @@
+<div class="future">
+  <label >
+    Future Product List
+  </label>
+
+  <div class="product-box" *ngFor="let product of products | async">
+  <!-- <div *ngIf="product.id ==101"> -->
+    <h3>
+      <a [title]="" [routerLink]="['']">
+        {{ product.name }}
+      </a>
+    </h3>      
+    <p>
+      Price: {{ product.price }}
+    </p>
+    <button (click)="goToDetails()">notify me when available</button>
+  <!-- </div> -->
+  </div>
+</div>
+<hr>
+
+
+
+
+ 

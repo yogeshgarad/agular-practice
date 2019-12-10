@@ -1,0 +1,18 @@
+[
+  {
+    "id": "101",
+    "name":"Apple",
+    "price": 777
+  },
+  {
+    "id": "102",
+    "name":"Mango",
+    "price": 888
+  },
+  {
+    "id": "103",
+    "name":"Bnanas",
+    "price": 999
+  }
+  
+]

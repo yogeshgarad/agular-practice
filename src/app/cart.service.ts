@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 @Injectable()
+
 export class CartService {
   items = [];
   constructor(
@@ -27,5 +28,8 @@ export class CartService {
   
   getShippingPrices() {
     return this.http.get('/assets/shipping.json');
+  }
+   getProducts() {
+    return this.http.get('/assets/testdata.json');
   }
 }
