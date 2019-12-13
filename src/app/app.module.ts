@@ -40,11 +40,15 @@ import { ApiService } from './api.service';
     MatSelectModule,
     MatFormFieldModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: LoginComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-       { path: 'shipping', component: ShippingComponent },
-       { path: 'login', component: LoginComponent },
+      { path: 'shipping', component: ShippingComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'add-user', component: AddUserComponent },
+      { path: 'list-user', component: ListUserComponent },
+      { path: 'edit-user', component: EditUserComponent },
+      {path : '', component : LoginComponent}
     ])
   ],
   declarations: [
