@@ -14,12 +14,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { TestComponent } from './test/test.component';
  import { LoginComponent } from './login/login.component';
+//  import {MatInputModule} from '@angular/material/input';
+ import {MatFormFieldModule, MatSelectModule} from '@angular/material';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatSelectModule,
+    MatFormFieldModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
