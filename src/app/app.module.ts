@@ -5,8 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ApiServiceService } from './api-service.service';
-
 import { AddUserComponent } from './user/add-user/add-user.component';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
 import { ListUserComponent } from './user/list-user/list-user.component';
@@ -29,6 +27,7 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
  import {MatFormFieldModule, MatSelectModule} from '@angular/material';
+import { ApiService } from './api.service';
 
 
 @NgModule({
@@ -63,7 +62,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     EditUserComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, ApiServiceService]
+  providers: [CartService, ApiService]
 })
 export class AppModule { }
 
